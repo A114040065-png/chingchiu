@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末作業：景點介紹網站</title>
+    <style>
+        /* 這裡的 CSS 負責網頁的排版與裝潢 */
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .spot-img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .info-grid {
+            background-color: #f8f9fa;
+            border-left: 5px solid #1abc9c;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+        .info-grid p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        .content-section {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .content-section p {
+            margin-bottom: 20px;
+        }
+        .footer-btn {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>📍 這裡輸入你想介紹的景點名稱</h1>
+    </div>
+
+    <div class="container">
+        <img class="spot-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" alt="景點主要照片">
+
+        <div class="info-grid">
+            <p><strong>✨ 景點特色：</strong> 請在這裡寫下這個地方最吸引人的地方（例如：復古老街、絕美夜景）。</p>
+            <p><strong>🚗 交通方式：</strong> 請在這裡寫下怎麼去（例如：搭乘火車至某某站，轉乘公車）。</p>
+            <p><strong>⏰ 建議停留：</strong> 預估參觀時間（例如：半天、2小時）。</p>
+        </div>
+
+        <div class="content-section">
+            <h3>關於這個景點</h3>
+            <p>請在這裡開始寫你的第一段景點介紹。可以分享它的歷史背景、由來，或是你為什麼推薦這個地方。</p>
+            
+            <p>這是第二段介紹。你可以描寫走在這裡的實際體驗，有哪些必看的建築、必吃的美食、或是最適合拍照的私房角度。</p>
+        </div>
+
+        <div class="footer-btn">
+            <a class="btn" href="https://maps.app.goo.gl/w6f9vX1XWnEAbv1G9" target="_blank">🗺️ 打開 Google 地圖看位置</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
