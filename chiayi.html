@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘉義美食大搜查</title>
+    <style>
+        :root { --primary-color: #06D6A0; --secondary-color: #118AB2; --bg-color: #F7F5F0; --text-color: #2B2D42; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #ffffff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .logo { font-size: 1.4rem; font-weight: 800; color: var(--secondary-color); text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 15px; align-items: center; }
+        .page-btn { text-decoration: none; color: white; background-color: #2B2D42; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; transition: all 0.3s; }
+        .page-btn:hover { background-color: var(--secondary-color); transform: scale(1.05); }
+        .hero { background: linear-gradient(135deg, #A8E6CF 0%, #06D6A0 100%); padding: 60px 20px; text-align: center; color: white; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        .hero h1 { font-size: 2.5rem; font-weight: 900; text-shadow: 2px 2px 0px #2B2D42; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+        .food-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .food-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s; display: flex; flex-direction: column; }
+        .food-card:hover { transform: translateY(-5px); }
+        .food-img { width: 100%; height: 220px; object-fit: cover; background-color: #e0e0e0; }
+        .food-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .food-tag { display: inline-block; background-color: #E8F5E9; color: #388E3C; padding: 3px 10px; border-radius: 5px; font-size: 0.8rem; font-weight: 700; width: fit-content; margin-bottom: 10px; }
+        .food-info h3 { margin-bottom: 10px; }
+        .food-info p { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+        .shop-details { background: #F8F9FA; padding: 12px; border-radius: 10px; font-size: 0.85rem; margin-bottom: 15px; border-left: 4px solid var(--secondary-color); }
+        .shop-details div { margin-bottom: 4px; color: #4A4A4A; }
+        .map-btn { display: block; text-align: center; background-color: #2B2D42; color: white; padding: 10px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; margin-top: auto; }
+        .map-btn:hover { background-color: var(--secondary-color); }
+        @media (max-width: 768px) { header { flex-direction: column; gap: 12px; } .hero h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🦃 嘉義美食大搜查</a>
+        <div class="nav-links">
+            <a href="index.html" class="page-btn">回新竹首頁 🏠</a>
+            <a href="tainan.html" class="page-btn">府城台南美食 🚀</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>不只有雞肉飯！驚艷味蕾的嘉義日常</h1>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">嘉義必吃排隊特搜</h2>
+        <div class="food-grid">
+            
+            <!-- 嘉義 1 -->
+            <article class="food-card">
+                <img src="請貼上照片網址" alt="阿宏師火雞肉飯" class="food-img">
+                <div class="food-info">
+                    <span class="food-tag">火雞肉飯霸主</span>
+                    <h3>阿宏師火雞肉飯</h3>
+                    <p>在地年輕人極力推薦！一定要點滿滿火雞肉片的火雞片飯，再加一顆半熟荷包蛋，邪惡度破表！</p>
+                    <div class="shop-details">
+                        <div>📍 <b>地址：</b>嘉義市東區光華路108號</div>
+                        <div>⏰ <b>時間：</b>10:30–20:00</div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/V4TzW9S5v2M5X6FA7" target="_blank" class="map-btn">Google 地圖導航 📍</a>
+                </div>
+            </article>
+
+            <!-- 嘉義 2 -->
+            <article class="food-card">
+                <img src="請貼上照片網址" alt="林聰明沙茶魚頭" class="food-img">
+                <div class="food-info">
+                    <span class="food-tag">國際名店</span>
+                    <h3>林聰明沙茶魚頭</h3>
+                    <p>紅到登上 Netflix 的名店！大骨熬煮的高湯加上濃郁沙茶，配上炸得酥脆的魚頭和大白菜，微辣過癮！</p>
+                    <div class="shop-details">
+                        <div>📍 <b>地址：</b>嘉義市東區中正路361號</div>
+                        <div>⏰ <b>時間：</b>12:00–21:30</div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/m8TsB5Wv2C5K6XA9" target="_blank" class="map-btn">Google 地圖導航 📍</a>
+                </div>
+            </article>
+
+            <!-- 嘉義 3 -->
+            <article class="food-card">
+                <img src="請貼上照片網址" alt="源興御香屋" class="food-img">
+                <div class="food-info">
+                    <span class="food-tag">神級飲料</span>
+                    <h3>源興御香屋</h3>
+                    <p>嘉義最強飲料傳奇。招牌「紅鑽葡萄柚綠茶」喝得到滿滿現剝葡萄柚果肉，酸甜清爽，排隊排再久都願意！</p>
+                    <div class="shop-details">
+                        <div>📍 <b>地址：</b>嘉義市西區中山路321號</div>
+                        <div>⏰ <b>時間：</b>10:00–20:00（週一、二公休）</div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/y8TsC5Wv2M5X6FA8" target="_blank" class="map-btn">Google 地圖導航 📍</a>
+                </div>
+            </article>
+
+            <!-- 嘉義 4 -->
+            <article class="food-card">
+                <img src="請貼上照片網址" alt="阿娥豆花" class="food-img">
+                <div class="food-info">
+                    <span class="food-tag">文化路夜市</span>
+                    <h3>阿娥豆花</h3>
+                    <p>傳承多年的文化路老字號，最大的特色是豆花不加糖水，而是加濃郁的「豆漿」，再搭配現炸的熱油條超讚！</p>
+                    <div class="shop-details">
+                        <div>📍 <b>地址：</b>嘉義市東區延平街233號</div>
+                        <div>⏰ <b>時間：</b>14:30–23:30（週二公休）</div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/w8TsD5Wv2N5X6FA9" target="_blank" class="map-btn">Google 地圖導航 📍</a>
+                </div>
+            </article>
+
+            <!-- 嘉義 5 -->
+            <article class="food-card">
+                <img src="請貼上照片網址" alt="阿婆烤玉米" class="food-img">
+                <div class="food-info">
+                    <span class="food-tag">隱藏版排隊美食</span>
+                    <h3>阿婆烤玉米</h3>
+                    <p>超狂的炭火烤玉米，必須一早先去排隊拿號碼牌！古法炭火慢慢烘烤，刷上多層厚實的特製麻醬香氣四溢。</p>
+                    <div class="shop-details">
+                        <div>📍 <b>地址：</b>嘉義市東區民族路312號</div>
+                        <div>⏰ <b>時間：</b>11:30–21:00（週一、二公休）</div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/z8TsE5Wv2P5X6FA0" target="_blank" class="map-btn">Google 地圖導航 📍</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+</body>
+</html>
